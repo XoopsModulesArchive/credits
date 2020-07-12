@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="include/style.css">
+
+<h2 align="center"><{$header}></h2>
+
+<table rules="none">
+
+<{foreach item=vypis from=$vypis}>
+
+<tr><td width="17%" rowspan="4"><{$vypis.image}></td></tr>
+<tr><td width="35%"><b><{$smarty.const._CRE_NAME}>:</b> <div  class="xoops_n"><{$vypis.name}></div></td>    <td><b><{$smarty.const._CRE_AUTHOR}>:</b> <div  class="xoops_a"><{$vypis.author}></div></td> </tr>
+<tr><td width="35%"><b><{$smarty.const._CRE_VERSION}>:</b> <div  class="xoops_v"><{$vypis.version}></div></td> <td rowspan="2"><b><{$smarty.const._CRE_CREDITS}>:</b> <div  class="xoops_c"><{$vypis.credits}></div></td> </tr>
+<tr><td width="35%"><b><{$smarty.const._CRE_LICENSE}>:</b> <div  class="xoops_l"><{$vypis.license}></div></td>  </tr>
+<tr><td class="foo" width="17%">&nbsp;</td>  <td class="foo">&nbsp;</td> <td class="foo">&nbsp;</td>  </tr>
+<{/foreach}>
+
+</table>
+
+<hr />
+<p align="right"><{$admin}></p>
